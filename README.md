@@ -1,4 +1,6 @@
 # MERN_nzWine
+nzWine is a full stack application with MERN (MongoDB, Express, React, Node.js)
+
 Design wireflame https://www.figma.com/file/1wry9rXfMv0sMw9xF2CHmi/nzWine?node-id=0%3A1
 
 ## Objective
