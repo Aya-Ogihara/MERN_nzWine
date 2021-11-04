@@ -1,0 +1,12 @@
+# MERN_nzWine
+
+## Objective
+* For the server-side component of a “New Zealand wine” web application.
+* The web application will provide users with access to information about different
+New Zealand wine regions and wines.
+
+* For the front end, React is used for an application called nzWine based on
+its existing server-side code (REST API and database).
+
+## User Stories
+* As a user, I want to be able to receive information on New Zealand wine regions, and New Zealand wines so that I can learn more about New Zealand wines I’ve tested or am interested in.
