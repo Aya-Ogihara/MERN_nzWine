@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 //const items = require('./routes/api/items');
 
@@ -21,7 +22,10 @@ mongoose
 // Use Routes  
 //app.use('/api/items', items)
 
-
+// Cors
+app.use(cors({
+  origin: 'http://localhost:3000'
+}))
 // Models
 const Models = require('./models');
 const Wines = Models.Wine;
