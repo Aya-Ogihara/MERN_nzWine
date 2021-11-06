@@ -1,7 +1,7 @@
 import React from 'react'
 
 function RegionView(props) {
-  const { region } = props;
+  //const { region } = props;
 
   return (
     <div>

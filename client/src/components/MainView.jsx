@@ -35,6 +35,7 @@ function MainView() {
       <Routes>
         <Route path="/regions/*" element={<RegionsView regions={regions} />} />
         <Route path="/wines" element={<WinesView />} />
+
         {/* <Route path='/regions/:name' render={({ match }) => { return <RegionView region={regions.find(region => region.Name === match.params.name)}/> }} /> */}
         <Route path='/regions/Marlborough' element={ <RegionView />} />
       </Routes>
