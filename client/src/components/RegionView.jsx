@@ -5,11 +5,12 @@ function RegionView(props) {
 
   return (
     <div>
-      <div>
+      <h3>test</h3>
+      {/* <div>
         { region.Name }
       </div>
       <img src={region.ImagePath} alt={ region.Name } crossOrigin="anonymous"/>
-      <div>{ region.Description }</div>
+      <div>{ region.Description }</div> */}
     </div>
   )
 }

@@ -3,12 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 
 // Components
-import AppNavbar from './components/AppNavbar';
+//import AppNavbar from './components/AppNavbar';
 import MainView from './components/MainView';
 function App() {
   return (
     <div className="App">
-      <AppNavbar />
+      {/* <AppNavbar /> */}
       <Container>
         <MainView />  
       </Container>
