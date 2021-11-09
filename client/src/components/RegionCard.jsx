@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 function RegionCard(props) {
-  const { region } = props;
-  const { Name } = region
+  const { Name } = props.region;
+
   //console.log(Name)
   return (
     <Link to={`/regions/${Name}`}>
