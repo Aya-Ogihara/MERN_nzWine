@@ -1,27 +1,16 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios';
+import React from 'react';
 
-function WinesView() {
-  const [ wines, setWines ] = useState([])
-
-  const getWine = () => {
-    axios.get(`http://localhost:5000/wines`)
-    .then(res => {
-      //console.log(res.data)
-      setWines(res.data)
-    })
-    .catch(err => {
-      console.log(err)
-    })
-  }
-
-  useEffect((getWine),[])
+//Component
+import WineCard from './WineCard';
+function WinesView(props) {
+  
+  const { wines } = props
 
   return (
-    <div>
+    <>
       <h2>New Zealand Wine Varieties</h2>
-      {wines.map(wine => <div key={wine._id}>{wine.Name}</div>)}
-    </div>
+      {wines.map(wine => <WineCard key={wine._id} wine={wine}/>)}
+    </>
   )
 }
 
