@@ -1,28 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 //import { Routes, Route } from 'react-router-dom';
-//import axios from 'axios';
+import axios from 'axios';
 
 // Components
 import RegionCard from './RegionCard';
 //import RegionView from './RegionView';
 
-function RegionsView(props) {
+function RegionsView() {
 
-  const { regions } = props;
-  // const [ regions, setRegions ] = useState([])
+  //const { regions } = props;
+  const [ regions, setRegions ] = useState([])
 
-  // const getRegions = () => {
-  //   axios.get(`http://localhost:5000/regions`)
-  //   .then(res => {
-  //     //console.log(res.data)
-  //     setRegions(res.data)
-  //   })
-  //   .catch(err => {
-  //     console.log(err)
-  //   })
-  // }
+  const getRegions = () => {
+    axios.get(`http://localhost:5000/regions`)
+    .then(res => {
+      //console.log(res.data)
+      setRegions(res.data)
+    })
+    .catch(err => {
+      console.log(err)
+    })
+  }
 
-  // useEffect((getRegions),[])
+  useEffect((getRegions),[])
 
   return (
     <>

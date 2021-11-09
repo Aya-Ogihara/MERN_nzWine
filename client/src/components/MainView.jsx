@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Routes, Route, useNavigate } from 'react-router-dom';
-import axios from 'axios';
 
 // Components
 import RegionsView from './RegionsView';
@@ -9,21 +8,6 @@ import RegionView from './RegionView';
 
 function MainView() {
   const navigate = useNavigate();
-  const [ regions, setRegions ] = useState([])
-
-  const getRegions = () => {
-    axios.get(`http://localhost:5000/regions`)
-    .then(res => {
-      //console.log(res.data)
-      setRegions(res.data)
-    })
-    .catch(err => {
-      console.log(err)
-    })
-  }
-
-  useEffect((getRegions),[])
-
 
   return (
     <div className='main-content'>
@@ -33,7 +17,7 @@ function MainView() {
       <button onClick={() => navigate('/regions')}>Region</button>
       <button onClick={() => navigate('/wines')}>Variety</button>
       <Routes>
-        <Route path="/regions/*" element={<RegionsView regions={regions} />} />
+        <Route path="/regions" element={<RegionsView />} />
         <Route path="/wines" element={<WinesView />} />
 
         {/* <Route path='/regions/:name' render={({ match }) => { return <RegionView region={regions.find(region => region.Name === match.params.name)}/> }} /> */}
