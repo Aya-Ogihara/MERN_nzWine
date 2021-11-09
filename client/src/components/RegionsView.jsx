@@ -1,28 +1,11 @@
-import React, { useState, useEffect } from 'react'
-//import { Routes, Route } from 'react-router-dom';
-import axios from 'axios';
+import React from 'react'
 
 // Components
 import RegionCard from './RegionCard';
-//import RegionView from './RegionView';
 
-function RegionsView() {
+function RegionsView(props) {
 
-  //const { regions } = props;
-  const [ regions, setRegions ] = useState([])
-
-  const getRegions = () => {
-    axios.get(`http://localhost:5000/regions`)
-    .then(res => {
-      //console.log(res.data)
-      setRegions(res.data)
-    })
-    .catch(err => {
-      console.log(err)
-    })
-  }
-
-  useEffect((getRegions),[])
+  const { regions } = props;
 
   return (
     <>
