@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function RegionView(props) {
   const { regions } = props;
@@ -18,7 +19,9 @@ function RegionView(props) {
               <p>{region.Description}</p>
               <h3>Wine varieties</h3>
               {region.Wine.map(wine => 
-                <div key={ wine._id }>{wine.Name}</div>
+                <div key={ wine._id }>
+                  <Link to={`/wines/${wine.Name}`}>{wine.Name}</Link>
+                </div>
                 )}
             </div>
           ))}
