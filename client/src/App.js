@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
+import AppProvider from './AppContext';
 
 // Components
 //import AppNavbar from './components/AppNavbar';
@@ -9,9 +10,11 @@ function App() {
   return (
     <div className="App">
       {/* <AppNavbar /> */}
-      <Container>
-        <MainView />  
-      </Container>
+      <AppProvider>
+        <Container>
+          <MainView />  
+        </Container>
+      </AppProvider>
     </div>
   );
 }
