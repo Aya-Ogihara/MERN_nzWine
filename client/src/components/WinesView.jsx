@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { WineContext } from '../context/WineContext';
 
 //Component
 import WineCard from './WineCard';
-function WinesView(props) {
-  
-  const { wines } = props
+function WinesView() {
+  const { wines } = useContext(WineContext);
+  //const { wines } = props;
 
   return (
     <>

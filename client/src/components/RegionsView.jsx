@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
-import { AppContext } from '../AppContext'
+import { RegionContext } from '../context/RegionContext'
 
 // Components
 import RegionCard from './RegionCard';
 
 function RegionsView() {
-  const { regions } = useContext(AppContext)
+  const { regions } = useContext(RegionContext)
   //const { regions } = props;
 
   return (

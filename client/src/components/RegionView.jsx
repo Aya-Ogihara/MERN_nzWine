@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { AppContext } from '../AppContext'
+import { RegionContext } from '../context/RegionContext'
 
 function RegionView() {
-  const { regions } = useContext(AppContext)
+  const { regions } = useContext(RegionContext)
   const { name } = useParams();
 
   return (

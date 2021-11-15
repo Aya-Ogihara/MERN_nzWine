@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
+import { WineContext } from '../context/WineContext';
 
-function WineView(props) {
-  const { wines } = props;
+function WineView() {
+  //const { wines } = props;
+  const { wines } = useContext(WineContext);
   const { name } = useParams();
 
   return (

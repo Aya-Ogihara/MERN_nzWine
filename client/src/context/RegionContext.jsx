@@ -1,32 +1,33 @@
 import React, { useState, useEffect, createContext } from 'react'
 import axios from 'axios';
 
-export const AppContext = createContext();
+export const RegionContext = createContext();
 
-function AppProvider(props) {
+function RegionProvider(props) {
   const [ regions, setRegions ] = useState([]);
+  const [ isloading, setIsLoading ] = useState(false);
 
   const getRegions = () => {
-    //setIsLoading(true)
+    setIsLoading(true)
     axios.get(`http://localhost:5000/regions`)
     .then(res => {
       //console.log(res.data)
       setRegions(res.data)
-      //setIsLoading(false)
+      setIsLoading(false)
     })
     .catch(err => {
       console.log(err)
-      //setIsLoading(false)
+      setIsLoading(false)
     })
   }
 
   useEffect((getRegions),[]);
 
   return (
-    <AppContext.Provider value={{ regions }} >
+    <RegionContext.Provider value={{ regions, isloading }} >
       {props.children}
-    </AppContext.Provider>
+    </RegionContext.Provider>
   )
 }
 
-export default AppProvider
+export default RegionProvider
