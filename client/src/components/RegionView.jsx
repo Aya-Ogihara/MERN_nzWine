@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { RegionContext } from '../context/RegionContext'
 
-function RegionView(props) {
-  const { regions } = props;
+function RegionView() {
+  const { regions } = useContext(RegionContext)
   const { name } = useParams();
 
   return (
