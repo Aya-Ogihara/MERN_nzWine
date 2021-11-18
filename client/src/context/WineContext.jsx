@@ -5,18 +5,18 @@ export const WineContext = createContext();
 
 function WineProvider(props) {
   const [ wines, setWines ] = useState([]);
-
+  const [ wineLoading, setWineLoading ] = useState(false);
   const getWine = () => {
-    //setIsLoading(true)
+    setWineLoading(true)
     axios.get(`http://localhost:5000/wines`)
     .then(res => {
       //console.log(res.data)
       setWines(res.data)
-      //setIsLoading(false)
+      setWineLoading(false)
     })
     .catch(err => {
       console.log(err)
-      //setIsLoading(false)
+      setWineLoading(false)
     })
   }
 
@@ -24,7 +24,7 @@ function WineProvider(props) {
 
 
   return (
-    <WineContext.Provider value={{ wines }} >
+    <WineContext.Provider value={{ wines, wineLoading }} >
       {props.children}
     </WineContext.Provider>
   )

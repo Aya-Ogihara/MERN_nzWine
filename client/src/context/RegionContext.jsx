@@ -5,26 +5,26 @@ export const RegionContext = createContext();
 
 function RegionProvider(props) {
   const [ regions, setRegions ] = useState([]);
-  const [ isloading, setIsLoading ] = useState(false);
+  const [ regionLoading, setRegionLoading ] = useState(false);
 
   const getRegions = () => {
-    setIsLoading(true)
+    setRegionLoading(true)
     axios.get(`http://localhost:5000/regions`)
     .then(res => {
       //console.log(res.data)
       setRegions(res.data)
-      setIsLoading(false)
+      setRegionLoading(false)
     })
     .catch(err => {
       console.log(err)
-      setIsLoading(false)
+      setRegionLoading(false)
     })
   }
 
   useEffect((getRegions),[]);
 
   return (
-    <RegionContext.Provider value={{ regions, isloading }} >
+    <RegionContext.Provider value={{ regions, regionLoading }} >
       {props.children}
     </RegionContext.Provider>
   )
