@@ -18,7 +18,7 @@ function HomeView() {
           {/* <h2>New Zealand Wine Regions</h2>
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/42_Degrees_Winery_1.jpg" alt='vineyard' style={{width: '400px'}} /> */}
           <Card 
-            sx={{ width: 400 }}
+            md={{ width: 400 }}
             className='card'>
             <CardActionArea>
               <CardMedia
@@ -39,7 +39,7 @@ function HomeView() {
           {/* <h2>New Zealand Wine Varieties</h2>
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Color_of_port_wine.jpg" alt='wines' style={{width: '400px'}} /> */}
           <Card 
-            sx={{ width: 400 }}
+            md={{ width: 400 }}
             className='card'>
             <CardActionArea>
               <CardMedia
@@ -60,7 +60,7 @@ function HomeView() {
           {/* <h2>New Zealand Wine Regions</h2>
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/42_Degrees_Winery_1.jpg" alt='vineyard' style={{width: '400px'}} /> */}
           <Card 
-            sx={{ width: 400 }}
+            md={{ width: 400 }}
             className='card'>
             <CardActionArea>
               <CardMedia
@@ -81,7 +81,7 @@ function HomeView() {
           {/* <h2>New Zealand Wine Varieties</h2>
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Color_of_port_wine.jpg" alt='wines' style={{width: '400px'}} /> */}
           <Card 
-            sx={{ width: 400 }}
+            md={{ width: 400 }}
             className='card'>
             <CardActionArea>
               <CardMedia

@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 .page-title {
   font-size: 36px;
   text-align: center;
-  margin: 50px;
+  margin: 40px;
 }
 
 /* Header */
@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
 }
+
 /* Home page */
 .home-question {
   text-align: center;
