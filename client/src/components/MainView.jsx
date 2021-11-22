@@ -10,6 +10,9 @@ import RegionView from './RegionView';
 import WinesView from './WinesView';
 import WineView from './WineView';
 
+//MUI
+import CircularProgress from '@mui/material/CircularProgress'
+
 function MainView() {
   const navigate = useNavigate();
   const { regionLoading } = useContext(RegionContext)
@@ -21,15 +24,15 @@ function MainView() {
           <div className="header-wrapper">
             <h1 className='logo' onClick={() => navigate('/')}>nzWine</h1>
             <nav className="main-navigation">
-              <button onClick={() => navigate('/')}>Home</button>
-              <button onClick={() => navigate('/regions')}>Region</button>
-              <button onClick={() => navigate('/wines')}>Variety</button>
+              <p onClick={() => navigate('/')}>Home</p>
+              <p onClick={() => navigate('/regions')}>Region</p>
+              <p onClick={() => navigate('/wines')}>Variety</p>
             </nav>
           </div>
         </header>
         <div className='body-wrapper'>
         {regionLoading||wineLoading ? (
-          <div>loading...</div>
+          <div className='loading'><CircularProgress /></div>
           ) : (
             <Routes>
               <Route path="/" element={<HomeView />} />  
