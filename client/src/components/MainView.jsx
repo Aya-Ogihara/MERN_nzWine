@@ -16,23 +16,34 @@ function MainView() {
   const { wineLoading } = useContext(WineContext)
 
   return (
-      <div className='main-content'>
-      <h1>nzWine</h1>
-      <button onClick={() => navigate('/')}>Home</button>
-      <button onClick={() => navigate('/regions')}>Region</button>
-      <button onClick={() => navigate('/wines')}>Variety</button>
-      {regionLoading||wineLoading ? (
-        <div>loading...</div>
-        ) : (
-          <Routes>
-            <Route path="/" element={<HomeView />} />  
-            <Route path="regions/" element={<RegionsView />} />
-            <Route path='regions/:name' element={ <RegionView />} />
-            <Route path="wines/" element={<WinesView />} />
-            <Route path='wines/:name' element={ <WineView />} />
-          </Routes>
-          )}
-    </div>
+      <>
+        <header className='page-header'>
+          <div className="header-wrapper">
+            <h1 className='logo' onClick={() => navigate('/')}>nzWine</h1>
+            <nav className="main-navigation">
+              <button onClick={() => navigate('/')}>Home</button>
+              <button onClick={() => navigate('/regions')}>Region</button>
+              <button onClick={() => navigate('/wines')}>Variety</button>
+            </nav>
+          </div>
+        </header>
+        <div className='body-wrapper'>
+        {regionLoading||wineLoading ? (
+          <div>loading...</div>
+          ) : (
+            <Routes>
+              <Route path="/" element={<HomeView />} />  
+              <Route path="regions/" element={<RegionsView />} />
+              <Route path='regions/:name' element={ <RegionView />} />
+              <Route path="wines/" element={<WinesView />} />
+              <Route path='wines/:name' element={ <WineView />} />
+            </Routes>
+            )}
+        </div>
+        <footer className='page-footer'>
+          <p className='copy-right'>&#169; 2021 nzWine</p>
+        </footer>
+      </>
   )
 }
 
