@@ -1,4 +1,6 @@
-/* Global style */
+/* ===
+Global style
+==== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +16,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-/* General style */
+/* ===
+General style
+==== */
 .loading {
   margin: 43vh 0;
   display: flex;
@@ -43,7 +47,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 40px;
 }
 
-/* Header */
+/* ===
+Header
+==== */
 .page-header {
   background-color: #ffe8f1;
   height: 70px;
@@ -70,13 +76,17 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
 }
 
-/* Home page */
+/* ===
+Home page
+==== */
 .home-question {
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Footer */
+/* ===
+Footer
+==== */
 .page-footer {
   background-color: #ffe8f1;
   height: 40px;
@@ -87,4 +97,27 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 12px;
   line-height: 40px;
+}
+
+/* ===
+Media query
+==== */
+
+@media all and (max-width: 600px) {
+  .header-wrapper {
+    padding: 0 10px;
+  }
+
+  .main-navigation {
+    width: 160px;
+  }
+
+  .page-title {
+    font-size: 26px;
+  }
+
+  .home-question {
+    margin: 20px;
+    font-size: 16px;
+  }
 }

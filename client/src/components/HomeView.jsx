@@ -15,8 +15,6 @@ function HomeView() {
       <h3 className='home-question'>What would you like to know about New Zealand Wine today?</h3>
       <div className='cards-wrapper'>
         <Link to={'/regions'} >
-          {/* <h2>New Zealand Wine Regions</h2>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/42_Degrees_Winery_1.jpg" alt='vineyard' style={{width: '400px'}} /> */}
           <Card 
             md={{ width: 400 }}
             className='card'>
@@ -36,8 +34,6 @@ function HomeView() {
           </Card>
         </Link>
         <Link to={'/wines'} >
-          {/* <h2>New Zealand Wine Varieties</h2>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Color_of_port_wine.jpg" alt='wines' style={{width: '400px'}} /> */}
           <Card 
             md={{ width: 400 }}
             className='card'>
@@ -57,8 +53,6 @@ function HomeView() {
           </Card>
         </Link>
         <Link to={'/regions'} >
-          {/* <h2>New Zealand Wine Regions</h2>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/42_Degrees_Winery_1.jpg" alt='vineyard' style={{width: '400px'}} /> */}
           <Card 
             md={{ width: 400 }}
             className='card'>
@@ -78,8 +72,6 @@ function HomeView() {
           </Card>
         </Link>
         <Link to={'/wines'} >
-          {/* <h2>New Zealand Wine Varieties</h2>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Color_of_port_wine.jpg" alt='wines' style={{width: '400px'}} /> */}
           <Card 
             md={{ width: 400 }}
             className='card'>
