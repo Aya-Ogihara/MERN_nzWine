@@ -1,6 +1,9 @@
 import React, { useContext } from 'react'
 import { RegionContext } from '../context/RegionContext'
 
+//MUI
+//import Box from '@mui/material/Box';
+
 // Components
 import RegionCard from './RegionCard';
 
@@ -10,8 +13,10 @@ function RegionsView() {
 
   return (
     <>
-      <h2>New Zealand Wine Regions</h2>
+      <h2 className='page-title'>New Zealand Wine Regions</h2>
+      <div className='cards-wrapper'>
       {regions.map(region => <RegionCard key={region._id} region={region}/>)}
+      </div>
     </>
   )
 }

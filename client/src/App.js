@@ -2,6 +2,9 @@ import RegionProvider from './context/RegionContext';
 import WineProvider from './context/WineContext';
 
 import MainView from './components/MainView';
+
+import './App.css'
+
 function App() {
   return (
     <div className="App">

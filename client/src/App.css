@@ -1,0 +1,76 @@
+/* Global style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+/* General style */
+.body-wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: auto;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 20px;
+}
+
+.page-title {
+  font-size: 36px;
+  text-align: center;
+  margin: 50px;
+}
+
+/* Header */
+.page-header {
+  background-color: #ebd6de;
+  height: 70px;
+}
+
+.header-wrapper {
+  max-width: 1160px; 
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  cursor: pointer;
+  line-height: 70px;
+}
+
+/* Home page */
+.home-question {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.page-footer {
+  background-color: #ebd6de;
+  height: 30px;
+  margin-top: 30px;
+}
+
+.copy-right {
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+}
