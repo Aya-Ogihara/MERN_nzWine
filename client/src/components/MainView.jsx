@@ -9,6 +9,10 @@ import RegionsView from './RegionsView';
 import RegionView from './RegionView';
 import WinesView from './WinesView';
 import WineView from './WineView';
+import MyPageView from './MyPageView';
+
+//MUI
+import CircularProgress from '@mui/material/CircularProgress'
 
 function MainView() {
   const navigate = useNavigate();
@@ -16,23 +20,35 @@ function MainView() {
   const { wineLoading } = useContext(WineContext)
 
   return (
-      <div className='main-content'>
-      <h1>nzWine</h1>
-      <button onClick={() => navigate('/')}>Home</button>
-      <button onClick={() => navigate('/regions')}>Region</button>
-      <button onClick={() => navigate('/wines')}>Variety</button>
-      {regionLoading||wineLoading ? (
-        <div>loading...</div>
-        ) : (
-          <Routes>
-            <Route path="/" element={<HomeView />} />  
-            <Route path="regions/" element={<RegionsView />} />
-            <Route path='regions/:name' element={ <RegionView />} />
-            <Route path="wines/" element={<WinesView />} />
-            <Route path='wines/:name' element={ <WineView />} />
-          </Routes>
-          )}
-    </div>
+      <>
+        <header className='page-header'>
+          <div className="header-wrapper">
+            <h1 className='logo' onClick={() => navigate('/')}>nzWine</h1>
+            <nav className="main-navigation">
+              <p onClick={() => navigate('/')}>Home</p>
+              <p onClick={() => navigate('/regions')}>Region</p>
+              <p onClick={() => navigate('/wines')}>Variety</p>
+            </nav>
+          </div>
+        </header>
+        <div className='body-wrapper'>
+        {regionLoading||wineLoading ? (
+          <div className='loading'><CircularProgress /></div>
+          ) : (
+            <Routes>
+              <Route path="/" element={<HomeView />} />  
+              <Route path="regions/" element={<RegionsView />} />
+              <Route path='regions/:name' element={ <RegionView />} />
+              <Route path="wines/" element={<WinesView />} />
+              <Route path='wines/:name' element={ <WineView />} />
+              <Route path='tasting-note' element={ <MyPageView />} />
+            </Routes>
+            )}
+        </div>
+        <footer className='page-footer'>
+          <p className='copy-right'>&#169; 2021 nzWine</p>
+        </footer>
+      </>
   )
 }
 

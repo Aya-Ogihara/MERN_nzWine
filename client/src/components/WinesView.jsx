@@ -9,8 +9,10 @@ function WinesView() {
 
   return (
     <>
-      <h2>New Zealand Wine Varieties</h2>
+      <h2 className='page-title'>New Zealand Wine Varieties</h2>
+      <div className='cards-wrapper'>
       {wines.map(wine => <WineCard key={wine._id} wine={wine}/>)}
+      </div>
     </>
   )
 }

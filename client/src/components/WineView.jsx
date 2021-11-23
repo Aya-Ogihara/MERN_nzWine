@@ -13,10 +13,10 @@ function WineView() {
           .filter(wine => wine.Name === name)
           .map(wine => 
             (
-            <div key={ wine._id }>
-              <h2>{wine.Name}</h2>
-              <img src={wine.ImagePath} alt={wine.Name} style={{width: '400px'}}/>
-              <p>{wine.Description}</p>
+            <div key={ wine._id } className='body-wrapper'>
+              <h2 className='page-title'>{wine.Name}</h2>
+              <img src={wine.ImagePath} alt={wine.Name} className='desc-img' />
+              <p className='description'>{wine.Description}</p>
               
             </div>
           ))}
