@@ -52,7 +52,7 @@ function HomeView() {
             </CardActionArea>
           </Card>
         </Link>
-        <Link to={'/regions'} >
+        <Link to={'/tasting-note'} >
           <Card 
             md={{ width: 400 }}
             className='card home-card'>

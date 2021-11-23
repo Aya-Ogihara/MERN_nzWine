@@ -9,6 +9,7 @@ import RegionsView from './RegionsView';
 import RegionView from './RegionView';
 import WinesView from './WinesView';
 import WineView from './WineView';
+import MyPageView from './MyPageView';
 
 //MUI
 import CircularProgress from '@mui/material/CircularProgress'
@@ -40,6 +41,7 @@ function MainView() {
               <Route path='regions/:name' element={ <RegionView />} />
               <Route path="wines/" element={<WinesView />} />
               <Route path='wines/:name' element={ <WineView />} />
+              <Route path='tasting-note' element={ <MyPageView />} />
             </Routes>
             )}
         </div>
