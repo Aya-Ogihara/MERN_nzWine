@@ -17,7 +17,7 @@ function HomeView() {
         <Link to={'/regions'} >
           <Card 
             md={{ width: 400 }}
-            className='card'>
+            className='card home-card'>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -36,7 +36,7 @@ function HomeView() {
         <Link to={'/wines'} >
           <Card 
             md={{ width: 400 }}
-            className='card'>
+            className='card home-card'>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -55,36 +55,17 @@ function HomeView() {
         <Link to={'/regions'} >
           <Card 
             md={{ width: 400 }}
-            className='card'>
+            className='card home-card'>
             <CardActionArea>
               <CardMedia
                 component="img"
                 height="300"
-                src= "https://upload.wikimedia.org/wikipedia/commons/f/fb/42_Degrees_Winery_1.jpg" 
+                src= "https://upload.wikimedia.org/wikipedia/commons/4/41/The_enjoyment_of_wine_%284455437234%29.jpg" 
                 alt='vineyard'
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                New Zealand Wine Regions
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </Link>
-        <Link to={'/wines'} >
-          <Card 
-            md={{ width: 400 }}
-            className='card'>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="300"
-                src= "https://upload.wikimedia.org/wikipedia/commons/f/f9/Color_of_port_wine.jpg" 
-                alt='wines'
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                New Zealand Wine Varieties
+                My New Zealand Wine Testing Note
                 </Typography>
               </CardContent>
             </CardActionArea>

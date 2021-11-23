@@ -14,12 +14,8 @@ function RegionCard(props) {
   //console.log(Name)
   return (
     <Link to={`/regions/${Name}`}>
-      {/* <div>
-        { Name }
-        <img src={ ImagePath } alt={ Name } />
-      </div> */}
       <Card 
-        sx={{ width: 320 }}
+        sx={{ width: 280 }}
         className='card'>
         <CardActionArea>
           <CardMedia
