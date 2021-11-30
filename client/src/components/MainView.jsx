@@ -9,6 +9,7 @@ import RegionsView from './RegionsView';
 import RegionView from './RegionView';
 import WinesView from './WinesView';
 import WineView from './WineView';
+import ClimateView from './ClimateView';
 import MyPageView from './MyPageView';
 
 //MUI
@@ -41,6 +42,7 @@ function MainView() {
               <Route path='regions/:name' element={ <RegionView />} />
               <Route path="wines/" element={<WinesView />} />
               <Route path='wines/:name' element={ <WineView />} />
+              <Route path='climate' element={ <ClimateView />} />
               <Route path='tasting-note' element={ <MyPageView />} />
             </Routes>
             )}

@@ -52,6 +52,25 @@ function HomeView() {
             </CardActionArea>
           </Card>
         </Link>
+        <Link to={'/climate'} >
+          <Card 
+            md={{ width: 400 }}
+            className='card home-card'>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="300"
+                src= "https://upload.wikimedia.org/wikipedia/commons/c/c8/View_from_McQueens_Pass_towards_Lyttelton_Harbour%2C_New_Zealand.jpg" 
+                alt='vineyard'
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                New Zealand Wine Regions
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </Link>
         <Link to={'/tasting-note'} >
           <Card 
             md={{ width: 400 }}
