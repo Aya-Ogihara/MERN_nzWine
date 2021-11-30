@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // MUI
 import Button from '@mui/material/Button';
 
-function ClimateView() {
+function SustainabilityView() {
   return (
     <div style={{margin: '40vh 0', textAlign: 'center'}}>
       <h2 style={{marginBottom: '20px'}}>Coming soon...</h2>
@@ -15,4 +15,4 @@ function ClimateView() {
   )
 }
 
-export default ClimateView
+export default SustainabilityView

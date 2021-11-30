@@ -52,7 +52,7 @@ function HomeView() {
             </CardActionArea>
           </Card>
         </Link>
-        <Link to={'/climate'} >
+        <Link to={'/sustainability'} >
           <Card 
             md={{ width: 400 }}
             className='card home-card'>
@@ -65,7 +65,7 @@ function HomeView() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                New Zealand Wine Regions
+                Sustainability of New Zealand Wines
                 </Typography>
               </CardContent>
             </CardActionArea>
