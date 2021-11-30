@@ -36,9 +36,11 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Cors
-app.use(cors({
-  origin: 'https://nzwine.herokuapp.com'
-}))
+app.use(cors());
+
+// app.use(cors({
+//   origin: 'https://nzwine.herokuapp.com'
+// }))
 
 // app.use(cors({
 //   origin: 'http://localhost:3000'
