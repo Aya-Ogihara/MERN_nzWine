@@ -36,11 +36,13 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Cors
+app.use(cors({
+  origin: 'https://nzwine.herokuapp.com'
+}))
+
 // app.use(cors({
 //   origin: 'http://localhost:3000'
-// }))
-
-app.use(cors());
+// }));
 
 // Models
 const Models = require('./models');
