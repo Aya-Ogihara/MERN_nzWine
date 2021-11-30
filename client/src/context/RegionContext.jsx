@@ -9,7 +9,8 @@ function RegionProvider(props) {
 
   const getRegions = () => {
     setRegionLoading(true)
-    axios.get(`http://localhost:5000/regions`)
+    // axios.get(`http://localhost:5000/regions`)
+    axios.get(`https://nzwine-api.herokuapp.com/regions`)
     .then(res => {
       //console.log(res.data)
       setRegions(res.data)

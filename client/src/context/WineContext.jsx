@@ -8,7 +8,8 @@ function WineProvider(props) {
   const [ wineLoading, setWineLoading ] = useState(false);
   const getWine = () => {
     setWineLoading(true)
-    axios.get(`http://localhost:5000/wines`)
+    // axios.get(`http://localhost:5000/wines`)
+    axios.get(`https://nzwine-api.herokuapp.com/wines`)
     .then(res => {
       //console.log(res.data)
       setWines(res.data)
