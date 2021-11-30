@@ -36,7 +36,9 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Cors
-app.use(cors());
+app.use(cors({
+  origin: '*'
+}));
 
 // app.use(cors({
 //   origin: 'https://nzwine.herokuapp.com'
