@@ -22,7 +22,7 @@ function HomeView() {
               <CardMedia
                 component="img"
                 height="300"
-                src= "https://upload.wikimedia.org/wikipedia/commons/f/fb/42_Degrees_Winery_1.jpg" 
+                src= "https://res.cloudinary.com/yaponka/image/upload/w_700,c_scale/nzWine/vineyard.jpg" 
                 alt='vineyard'
               />
               <CardContent>
@@ -41,7 +41,7 @@ function HomeView() {
               <CardMedia
                 component="img"
                 height="300"
-                src= "https://upload.wikimedia.org/wikipedia/commons/f/f9/Color_of_port_wine.jpg" 
+                src= "https://res.cloudinary.com/yaponka/image/upload/w_700,c_scale/nzWine/wines.jpg" 
                 alt='wines'
               />
               <CardContent>
@@ -60,8 +60,8 @@ function HomeView() {
               <CardMedia
                 component="img"
                 height="300"
-                src= "https://upload.wikimedia.org/wikipedia/commons/c/c8/View_from_McQueens_Pass_towards_Lyttelton_Harbour%2C_New_Zealand.jpg" 
-                alt='vineyard'
+                src= "https://res.cloudinary.com/yaponka/image/upload/w_700,c_scale/nzWine/mountains.jpg" 
+                alt='mountains'
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -79,8 +79,8 @@ function HomeView() {
               <CardMedia
                 component="img"
                 height="300"
-                src= "https://upload.wikimedia.org/wikipedia/commons/4/41/The_enjoyment_of_wine_%284455437234%29.jpg" 
-                alt='vineyard'
+                src= "https://res.cloudinary.com/yaponka/image/upload/w_700,c_scale/nzWine/wine_tasting.jpg" 
+                alt='wine tasting'
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">

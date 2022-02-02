@@ -48,7 +48,7 @@ function MainView() {
             )}
         </div>
         <footer className='page-footer'>
-          <p className='copy-right'>&#169; 2021 nzWine</p>
+          <p className='copy-right'>&#169; 2022 nzWine</p>
         </footer>
       </>
   )
