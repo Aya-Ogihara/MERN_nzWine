@@ -21,7 +21,7 @@ function MainView() {
   const { wineLoading } = useContext(WineContext)
 
   return (
-      <>
+      <div className='wrapper'>
         <header className='page-header'>
           <div className="header-wrapper">
             <h1 className='logo' onClick={() => navigate('/')}>nzWine</h1>
@@ -50,7 +50,7 @@ function MainView() {
         <footer className='page-footer'>
           <p className='copy-right'>&#169; 2022 nzWine</p>
         </footer>
-      </>
+      </div>
   )
 }
 

@@ -20,6 +20,12 @@ h1, h2, h3, h4, h5, h6 {
 /* ===
 General style
 ==== */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .loading {
   margin: 43vh 0;
   display: flex;
@@ -132,13 +138,13 @@ wine / region single view page
 /* ===
 Footer
 ==== */
+
 .page-footer {
   background-color: #ffe8f1;
   height: 40px;
   margin-top: 30px;
-  position: sticky;
-  top: 100vh;
 }
+
 
 .copy-right {
   text-align: center;
