@@ -18,6 +18,7 @@ Design wireflame https://www.figma.com/file/1wry9rXfMv0sMw9xF2CHmi/nzWine?node-i
 * React
 * Node.js
 
+[nzWine API repository](https://github.com/Aya-Ogihara/nzWine-api)
 ## Setup
 To install the dependencies run `npm install`
 
