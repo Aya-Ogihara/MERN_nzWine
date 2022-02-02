@@ -8,6 +8,7 @@ Global style
   color: #333;
 }
 
+
 body {
   font-family: 'Roboto','Helvetica','Arial',sans-serif;
 }
@@ -104,7 +105,13 @@ wine / region single view page
 }
 
 .desc-img {
-  width: 40%;
+  width: 350px;
+  display: block;
+  margin: auto;
+}
+
+.desc-img1 {
+  width: 250px;
   display: block;
   margin: auto;
 }
@@ -129,6 +136,8 @@ Footer
   background-color: #ffe8f1;
   height: 40px;
   margin-top: 30px;
+  position: sticky;
+  top: 100vh;
 }
 
 .copy-right {
@@ -172,7 +181,7 @@ Media query
     font-size: 14px;
   }
   .desc-img {
-    width: 60%;
+    width: 50%;
   }
   
   .description {

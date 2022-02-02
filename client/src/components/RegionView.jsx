@@ -26,7 +26,7 @@ function RegionView() {
               <div className="budge-wrapper">
                 <h4  className='budge'>{region.Island} Island</h4>
               </div>
-              <img src={region.ImagePath} alt={region.Name} className='desc-img'/>
+              <img src={region.ImagePath} alt={region.Name} className='desc-img1'/>
               <p className='description'>{region.Description}</p>
               <h3 className='region-varieties'>Wine varieties</h3>
               <div className='cards-wrapper'>
