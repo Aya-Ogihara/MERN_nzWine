@@ -30,4 +30,4 @@ Design wireflame https://www.figma.com/file/1wry9rXfMv0sMw9xF2CHmi/nzWine?node-i
 ## Setup
 To install the dependencies run `npm install`
 
-To start the application run `npm start`
+To start the application run `npm run dev`
